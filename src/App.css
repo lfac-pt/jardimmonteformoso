@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Outfit:wght@300;400;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-brand-yellow: #fcd53f;
+  --color-brand-blue: #0f3bee;
+  --color-brand-red: #da1212;
+  --color-brand-black: #1a1a1a;
+  --color-brand-white: #f8f9fa;
+  --font-display: "Fredoka", sans-serif;
+  --font-body: "Outfit", sans-serif;
+}
+
+:root {
+  --brand-yellow: #fcd53f;
+  --brand-blue: #0f3bee;
+  --brand-red: #da1212;
+  --brand-black: #1a1a1a;
+  --brand-white: #f8f9fa;
+}
+
+body {
+  margin: 0;
+  color: var(--brand-black);
+  font-family: var(--font-body);
+  background-color: var(--brand-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--brand-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-yellow);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-blue);
+}
