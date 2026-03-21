@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaImages } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const Home: React.FC = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -18,7 +19,7 @@ export const Home: React.FC = () => {
             {/* Open Graph Tags */}
             <meta property="og:title" content="Jardim Monte Formoso" />
             <meta property="og:description" content="Um refúgio urbano para a biodiversidade no coração de Coimbra." />
-            <meta property="og:image" content="https://jardimmonteformoso.pt/hero.png" />
+            <meta property="og:image" content="https://jardimmonteformoso.pt/hero.jpg" />
             <meta property="og:url" content="https://jardimmonteformoso.pt" />
             <meta property="og:type" content="website" />
 
@@ -26,14 +27,14 @@ export const Home: React.FC = () => {
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content="Jardim Monte Formoso" />
             <meta name="twitter:description" content="Um refúgio urbano para a biodiversidade em Coimbra." />
-            <meta name="twitter:image" content="https://jardimmonteformoso.pt/hero.png" />
+            <meta name="twitter:image" content="https://jardimmonteformoso.pt/hero.jpg" />
 
             <div className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden bg-brand-black">
                 {/* Full-screen Background Image with subtle zoom animation */}
                 <div 
                     className={`absolute inset-0 transition-transform duration-[10000ms] ease-out ${isVisible ? 'scale-110' : 'scale-100'}`}
                     style={{
-                        backgroundImage: 'url("/hero.png")',
+                        backgroundImage: 'url("/hero.jpg")',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                     }}
@@ -53,15 +54,25 @@ export const Home: React.FC = () => {
                             Um refúgio urbano para a biodiversidade no coração de Coimbra.
                         </p>
 
-                        <a
-                            href="https://www.instagram.com/jardimmonteformoso/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group flex items-center gap-4 bg-brand-white/10 hover:bg-brand-white/20 backdrop-blur-md border border-brand-white/30 px-8 py-4 rounded-full text-brand-white transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-                        >
-                            <FaInstagram className="w-8 h-8 group-hover:rotate-12 transition-transform" />
-                            <span className="text-xl md:text-2xl font-medium tracking-tight">@jardimmonteformoso</span>
-                        </a>
+                        <div className="flex flex-col sm:flex-row items-center gap-4">
+                            <a
+                                href="https://www.instagram.com/jardimmonteformoso/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-center gap-4 bg-brand-white/10 hover:bg-brand-white/20 backdrop-blur-md border border-brand-white/30 px-8 py-4 rounded-full text-brand-white transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                            >
+                                <FaInstagram className="w-6 h-6 group-hover:rotate-12 transition-transform" />
+                                <span className="text-xl font-medium tracking-tight">Instagram</span>
+                            </a>
+
+                            <Link
+                                to="/galeria"
+                                className="group flex items-center gap-4 bg-brand-yellow hover:bg-white text-brand-black px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl font-bold"
+                            >
+                                <FaImages className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                                <span className="text-xl tracking-tight">Galeria</span>
+                            </Link>
+                        </div>
                     </div>
                 </main>
 

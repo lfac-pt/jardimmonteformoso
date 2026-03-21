@@ -9,7 +9,8 @@
     "dev": "rsbuild dev --open",
     "preview": "rsbuild preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "sync-gallery": "node scripts/sync-gallery.js"
   },
   "dependencies": {
     "react": "^19.2.3",
