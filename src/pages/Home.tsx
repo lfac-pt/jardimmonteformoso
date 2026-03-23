@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaInstagram, FaImages } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaInstagram } from "react-icons/fa";
 
 export const Home: React.FC = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -54,7 +53,7 @@ export const Home: React.FC = () => {
                             Um refúgio urbano para a biodiversidade no coração de Coimbra.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row items-center gap-4">
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <a
                                 href="https://www.instagram.com/jardimmonteformoso/"
                                 target="_blank"
@@ -64,14 +63,6 @@ export const Home: React.FC = () => {
                                 <FaInstagram className="w-6 h-6 group-hover:rotate-12 transition-transform" />
                                 <span className="text-xl font-medium tracking-tight">Instagram</span>
                             </a>
-
-                            <Link
-                                to="/galeria"
-                                className="group flex items-center gap-4 bg-brand-yellow hover:bg-white text-brand-black px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl font-bold"
-                            >
-                                <FaImages className="w-6 h-6 group-hover:scale-110 transition-transform" />
-                                <span className="text-xl tracking-tight">Galeria</span>
-                            </Link>
                         </div>
                     </div>
                 </main>
