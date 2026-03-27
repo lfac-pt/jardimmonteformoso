@@ -35,7 +35,7 @@ export const Home: React.FC = () => {
                     style={{
                         backgroundImage: 'url("/hero.jpg")',
                         backgroundSize: 'cover',
-                        backgroundPosition: 'center',
+                        backgroundPosition: 'center 35%',
                     }}
                 >
                     <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
