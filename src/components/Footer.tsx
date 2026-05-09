@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
                 <img 
                     src="/logos-mobile.webp" 
                     alt="Apoios e Parceiros" 
-                    className="block sm:hidden w-full h-auto object-contain mx-auto opacity-90 hover:opacity-100 transition-opacity -mt-8 -mb-4"
+                    className="block sm:hidden w-[120%] max-w-[120%] -ml-[10%] h-auto object-contain opacity-90 hover:opacity-100 transition-opacity -mt-10 -mb-32"
                 />
             </div>
         </footer>
