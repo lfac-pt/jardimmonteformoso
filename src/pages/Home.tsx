@@ -44,7 +44,7 @@ export const Home: React.FC = () => {
                 {/* Content Container */}
                 <main className={`relative z-10 w-full max-w-4xl px-6 text-center transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                     <div className="flex flex-col items-center gap-8">
-                        <h1 className="font-display text-7xl md:text-9xl text-brand-white uppercase leading-none tracking-tighter drop-shadow-2xl">
+                        <h1 className="font-display text-[4.1rem] md:text-[7rem] text-brand-white uppercase leading-none tracking-tighter drop-shadow-2xl">
                             Jardim<br />
                             <span className="text-brand-yellow drop-shadow-lg">Monte Formoso</span>
                         </h1>
