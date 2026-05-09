@@ -1,0 +1,27 @@
+import React, { useEffect, useState } from "react";
+
+export const About: React.FC = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        setIsVisible(true);
+    }, []);
+
+    return (
+        <div className="relative min-h-[100dvh] flex flex-col items-center justify-center overflow-hidden bg-brand-black px-6 pt-24">
+            {/* Subtle floating elements/blobs to match the theme */}
+            <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-brand-yellow/10 rounded-full blur-[100px] pointer-events-none" />
+            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-blue/10 rounded-full blur-[120px] pointer-events-none" />
+            
+            <main className={`relative z-10 w-full max-w-3xl text-center space-y-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h1 className="text-brand-white font-display text-5xl md:text-7xl uppercase tracking-tighter drop-shadow-2xl">
+                    Quem Somos
+                </h1>
+                
+                <p className="text-brand-white/90 text-xl md:text-3xl font-light tracking-wide leading-relaxed text-balance">
+                    O Jardim Monte Formoso é um projeto comunitário de regeneração ecológica urbana em Coimbra, dedicado à recuperação de espaços verdes, promoção da biodiversidade e criação de relações mais próximas entre pessoas, território e natureza.
+                </p>
+            </main>
+        </div>
+    );
+};
