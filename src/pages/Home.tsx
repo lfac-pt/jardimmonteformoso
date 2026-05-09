@@ -28,7 +28,7 @@ export const Home: React.FC = () => {
             <meta name="twitter:description" content="Um refúgio urbano para a biodiversidade em Coimbra." />
             <meta name="twitter:image" content="https://jardimmonteformoso.pt/hero.webp" />
 
-            <div className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden bg-brand-black pb-24 md:pb-32">
+            <div className="relative min-h-[85dvh] flex items-center justify-center overflow-hidden bg-brand-black">
                 {/* Full-screen Background Image with subtle zoom animation */}
                 <div 
                     className={`absolute inset-0 transition-transform duration-[10000ms] ease-out ${isVisible ? 'scale-110' : 'scale-100'}`}

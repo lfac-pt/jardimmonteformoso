@@ -14,7 +14,7 @@ export const Projects: React.FC = () => {
     ];
 
     return (
-        <div className="relative min-h-[100dvh] flex flex-col items-center justify-center overflow-hidden bg-brand-black px-6 pt-24 pb-32 md:pb-40">
+        <div className="relative min-h-[85dvh] flex flex-col items-center justify-center overflow-hidden bg-brand-black px-6 pt-24 pb-12">
             {/* Subtle floating elements/blobs to match the theme */}
             <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-brand-yellow/10 rounded-full blur-[100px] pointer-events-none" />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-blue/10 rounded-full blur-[120px] pointer-events-none" />

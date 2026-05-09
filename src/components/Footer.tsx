@@ -2,19 +2,19 @@ import React from 'react';
 
 export const Footer: React.FC = () => {
     return (
-        <footer className="fixed bottom-0 left-0 w-full z-50 p-4 sm:p-8 pointer-events-none flex justify-center">
-            <div className="pointer-events-auto w-full px-4">
+        <footer className="w-full bg-white pt-2 pb-12 px-6 flex justify-center relative z-20 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] overflow-hidden">
+            <div className="w-full max-w-7xl">
                 {/* Desktop Image */}
                 <img 
                     src="/logos-desktop.webp" 
                     alt="Apoios e Parceiros" 
-                    className="hidden sm:block w-[90%] md:w-[80%] max-w-7xl h-auto object-contain invert brightness-0 opacity-95 hover:opacity-100 transition-opacity drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)] mx-auto"
+                    className="hidden sm:block w-[90%] md:w-[85%] h-auto object-contain mx-auto opacity-90 hover:opacity-100 transition-opacity -mt-4 md:-mt-8"
                 />
                 {/* Mobile Image */}
                 <img 
                     src="/logos-mobile.webp" 
                     alt="Apoios e Parceiros" 
-                    className="block sm:hidden w-[95%] h-auto object-contain invert brightness-0 opacity-95 hover:opacity-100 transition-opacity drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)] mx-auto"
+                    className="block sm:hidden w-[95%] h-auto object-contain mx-auto opacity-90 hover:opacity-100 transition-opacity -mt-6"
                 />
             </div>
         </footer>
