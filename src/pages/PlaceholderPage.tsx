@@ -6,7 +6,7 @@ interface Props {
 
 export const PlaceholderPage: React.FC<Props> = ({ title }) => {
     return (
-        <div className="min-h-[100dvh] bg-brand-black flex flex-col items-center justify-center overflow-hidden relative">
+        <div className="min-h-[100dvh] bg-brand-black flex flex-col items-center justify-center overflow-hidden relative pb-32 md:pb-40">
             {/* Subtle floating elements/blobs to match the theme */}
             <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-brand-yellow/10 rounded-full blur-[100px] pointer-events-none" />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-blue/10 rounded-full blur-[120px] pointer-events-none" />

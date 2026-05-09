@@ -18,7 +18,7 @@ export const Home: React.FC = () => {
             {/* Open Graph Tags */}
             <meta property="og:title" content="Jardim Monte Formoso" />
             <meta property="og:description" content="Um refúgio urbano para a biodiversidade no coração de Coimbra." />
-            <meta property="og:image" content="https://jardimmonteformoso.pt/hero.jpg" />
+            <meta property="og:image" content="https://jardimmonteformoso.pt/hero.webp" />
             <meta property="og:url" content="https://jardimmonteformoso.pt" />
             <meta property="og:type" content="website" />
 
@@ -26,14 +26,14 @@ export const Home: React.FC = () => {
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content="Jardim Monte Formoso" />
             <meta name="twitter:description" content="Um refúgio urbano para a biodiversidade em Coimbra." />
-            <meta name="twitter:image" content="https://jardimmonteformoso.pt/hero.jpg" />
+            <meta name="twitter:image" content="https://jardimmonteformoso.pt/hero.webp" />
 
-            <div className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden bg-brand-black">
+            <div className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden bg-brand-black pb-24 md:pb-32">
                 {/* Full-screen Background Image with subtle zoom animation */}
                 <div 
                     className={`absolute inset-0 transition-transform duration-[10000ms] ease-out ${isVisible ? 'scale-110' : 'scale-100'}`}
                     style={{
-                        backgroundImage: 'url("/hero.jpg")',
+                        backgroundImage: 'url("/hero.webp")',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center 35%',
                     }}
@@ -70,11 +70,6 @@ export const Home: React.FC = () => {
                 {/* Subtle floating elements/blobs */}
                 <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-brand-yellow/20 rounded-full blur-[100px] animate-pulse pointer-events-none" />
                 <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-blue/10 rounded-full blur-[120px] animate-pulse delay-700 pointer-events-none" />
-                
-                {/* subtle text */}
-                <div className={`absolute bottom-8 left-0 w-full text-center transition-opacity duration-1000 delay-1000 ${isVisible ? 'opacity-40' : 'opacity-0'}`}>
-                    <p className="text-brand-white text-sm tracking-[0.2em] uppercase">Coimbra • Portugal</p>
-                </div>
             </div>
         </>
     );

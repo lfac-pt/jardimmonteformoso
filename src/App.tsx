@@ -5,6 +5,7 @@ import { About } from "./pages/About";
 import { Projects } from "./pages/Projects";
 import { PlaceholderPage } from "./pages/PlaceholderPage";
 import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 import "./App.css";
 
 const App: React.FC = () => {
@@ -20,6 +21,7 @@ const App: React.FC = () => {
         {/* Redirect any other path to Home */}
         <Route path="*" element={<Home />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
