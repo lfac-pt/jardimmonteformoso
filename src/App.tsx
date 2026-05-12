@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Projects } from "./pages/Projects";
+import { Contacts } from "./pages/Contacts";
 import { PlaceholderPage } from "./pages/PlaceholderPage";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Route path="/projetos" element={<Projects />} />
         <Route path="/participar" element={<PlaceholderPage title="Participar" />} />
         <Route path="/loja" element={<PlaceholderPage title="Loja" />} />
+        <Route path="/contactos" element={<Contacts />} />
         {/* Redirect any other path to Home */}
         <Route path="*" element={<Home />} />
       </Routes>

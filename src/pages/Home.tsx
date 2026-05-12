@@ -17,7 +17,7 @@ export const Home: React.FC = () => {
             
             {/* Open Graph Tags */}
             <meta property="og:title" content="Jardim Monte Formoso" />
-            <meta property="og:description" content="Um refúgio urbano para a biodiversidade no coração de Coimbra." />
+            <meta property="og:description" content="Criamos refúgios urbanos para a biodiversidade no coração de Coimbra." />
             <meta property="og:image" content="https://jardimmonteformoso.pt/hero.webp" />
             <meta property="og:url" content="https://jardimmonteformoso.pt" />
             <meta property="og:type" content="website" />
@@ -25,10 +25,10 @@ export const Home: React.FC = () => {
             {/* Twitter Card Tags */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content="Jardim Monte Formoso" />
-            <meta name="twitter:description" content="Um refúgio urbano para a biodiversidade em Coimbra." />
+            <meta name="twitter:description" content="Criamos refúgios urbanos para a biodiversidade em Coimbra." />
             <meta name="twitter:image" content="https://jardimmonteformoso.pt/hero.webp" />
 
-            <div className="relative min-h-[85dvh] flex items-center justify-center overflow-hidden bg-brand-black">
+            <div className="relative min-h-[95dvh] flex items-center justify-center overflow-hidden bg-brand-black">
                 {/* Full-screen Background Image with subtle zoom animation */}
                 <div 
                     className={`absolute inset-0 transition-transform duration-[10000ms] ease-out ${isVisible ? 'scale-110' : 'scale-100'}`}
@@ -50,7 +50,7 @@ export const Home: React.FC = () => {
                         </h1>
                         
                         <p className="max-w-xl text-xl md:text-2xl text-brand-white/90 font-light tracking-wide leading-relaxed">
-                            Um refúgio urbano para a biodiversidade no coração de Coimbra.
+                            Criamos refúgios urbanos para a biodiversidade no coração de Coimbra.
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

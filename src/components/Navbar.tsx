@@ -25,18 +25,20 @@ export const Navbar: React.FC = () => {
                     <Link to="/participar" className={`transition-colors whitespace-nowrap ${isActive('/participar')}`}>Participar</Link>
                     <span className="text-brand-white/20">|</span>
                     <Link to="/loja" className={`transition-colors whitespace-nowrap ${isActive('/loja')}`}>Loja</Link>
+                    <span className="text-brand-white/20">|</span>
+                    <Link to="/contactos" className={`transition-colors whitespace-nowrap ${isActive('/contactos')}`}>Contactos</Link>
                 </div>
 
                 {/* Mobile Menu Button */}
-                <div className="md:hidden flex items-center justify-between bg-black/30 backdrop-blur-md border border-white/10 px-5 py-2.5 rounded-full min-w-[140px]">
+                <button 
+                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    className="md:hidden flex items-center justify-between bg-black/30 backdrop-blur-md border border-white/10 px-5 py-2.5 rounded-full min-w-[140px] focus:outline-none active:bg-black/50 transition-colors"
+                >
                     <span className="text-xs font-light tracking-widest uppercase text-brand-white/90">Menu</span>
-                    <button 
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
-                        className="text-brand-white p-1 ml-4 focus:outline-none"
-                    >
+                    <div className="text-brand-white p-1 ml-4">
                         {isMobileMenuOpen ? <FiX size={18} /> : <FiMenu size={18} />}
-                    </button>
-                </div>
+                    </div>
+                </button>
 
                 {/* Mobile Dropdown */}
                 <div 
@@ -49,6 +51,7 @@ export const Navbar: React.FC = () => {
                     <Link to="/projetos" className={`transition-colors ${isActive('/projetos')}`} onClick={() => setIsMobileMenuOpen(false)}>Projetos</Link>
                     <Link to="/participar" className={`transition-colors ${isActive('/participar')}`} onClick={() => setIsMobileMenuOpen(false)}>Participar</Link>
                     <Link to="/loja" className={`transition-colors ${isActive('/loja')}`} onClick={() => setIsMobileMenuOpen(false)}>Loja</Link>
+                    <Link to="/contactos" className={`transition-colors ${isActive('/contactos')}`} onClick={() => setIsMobileMenuOpen(false)}>Contactos</Link>
                 </div>
             </div>
         </nav>
