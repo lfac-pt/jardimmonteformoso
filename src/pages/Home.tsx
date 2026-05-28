@@ -18,7 +18,7 @@ export const Home: React.FC = () => {
             {/* Open Graph Tags */}
             <meta property="og:title" content="Jardim Monte Formoso" />
             <meta property="og:description" content="Criamos refúgios urbanos para a biodiversidade no coração de Coimbra." />
-            <meta property="og:image" content="https://jardimmonteformoso.pt/hero.webp" />
+            <meta property="og:image" content="https://jardimmonteformoso.pt/coimbra-moldura-flores.webp" />
             <meta property="og:url" content="https://jardimmonteformoso.pt" />
             <meta property="og:type" content="website" />
 
@@ -26,14 +26,14 @@ export const Home: React.FC = () => {
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content="Jardim Monte Formoso" />
             <meta name="twitter:description" content="Criamos refúgios urbanos para a biodiversidade em Coimbra." />
-            <meta name="twitter:image" content="https://jardimmonteformoso.pt/hero.webp" />
+            <meta name="twitter:image" content="https://jardimmonteformoso.pt/coimbra-moldura-flores.webp" />
 
             <div className="relative min-h-[95dvh] flex items-center justify-center overflow-hidden bg-brand-black">
                 {/* Full-screen Background Image with subtle zoom animation */}
                 <div 
                     className={`absolute inset-0 transition-transform duration-[10000ms] ease-out ${isVisible ? 'scale-110' : 'scale-100'}`}
                     style={{
-                        backgroundImage: 'url("/hero.webp")',
+                        backgroundImage: 'url("/coimbra-moldura-flores.webp")',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center 35%',
                     }}
